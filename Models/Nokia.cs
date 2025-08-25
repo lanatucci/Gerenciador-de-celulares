@@ -6,9 +6,18 @@ namespace DesafioPOO.Models
     {
         // TODO: Sobrescrever o método "InstalarAplicativo"
         //implementado!!
+
+        
+        //Direcionamento para usar construtor de Smartphone
+        public Nokia(string numero, string modelo, string imei, int memoria) : base(numero, modelo, imei, memoria)
+        {
+
+        }
+        
         public override void InstalarAplicativo(string nomeApp)
         {
-            Console.WriteLine("Instalando aplicativo no Nokia...");
+            string NomeApp = nomeApp;
+            Console.WriteLine($"Instalando o aplicativo {NomeApp} no Nokia...");
         }
     }
 }
